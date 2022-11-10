@@ -1,0 +1,61 @@
+{
+  "appPageId" : "8e2fd5ff-71ba-4156-b945-4844531b6cb6",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "id" : "ebada8f2-6302-4410-9b18-710a7351030c",
+  "label" : "Error",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"f9c49556-0890-4394-8394-76a180fe0e40\",\"columns\":[{\"UUID\":\"dfd13ed4-0b99-42b1-b574-285ae1372e47\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "f9c49556-0890-4394-8394-76a180fe0e40",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<p style=\"text-align: center;\">Invalid Page</p>"
+          },
+          "componentName" : "community_builder:richTextEditor",
+          "id" : "c80cba68-6db5-4efd-98a3-fbc4d37045ce",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "dfd13ed4-0b99-42b1-b574-285ae1372e47",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "4289c3f8-faf3-42f6-90d1-ee28235a3241",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "Error",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "003c9fe8-c8a0-476c-b32c-57a843bedbba",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "af29b656-4222-4710-9ab5-9f69e4429805",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

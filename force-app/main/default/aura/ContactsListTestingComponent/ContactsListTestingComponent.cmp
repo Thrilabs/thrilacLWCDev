@@ -1,0 +1,23 @@
+<aura:component Controller="ContactListApexController" implements="force:appHostable,force:hassObjectName,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Contacts" type="Contact"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <c:QuickContact accountId="{!v.recordId}"/>
+    
+    <div class="slds-grid slds-wrap">
+    <aura:iteration items="{!v.Contacts}" var="Con">
+      <div class="slds-col slds-size_1-of-3 slds-p-around_small" >
+    	<lightning:card iconName ="standard:contact" footer="{!Con.Email}" title="{!Con.LastName}" >
+            <aura:set attribute="actions">
+            <lightning:button name="{!Con.Id}" variant="brand" label="View Details" title="View Details" onclick="{!c.ViewRecord}"/>
+            </aura:set>
+            <div class="slds-p-horizontal_small">
+                {!Con.FirstName} &nbsp;{!Con.LastName}<br/>
+                {!Con.Phone}
+            </div>
+        </lightning:card>
+  </div>
+        
+ </aura:iteration>
+    </div>
+</aura:component>

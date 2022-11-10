@@ -1,0 +1,19 @@
+<aura:component Controller="ContactListApexController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="accountId" type="String"/>
+    <aura:attribute name="ErrorMessage" type="String"/>
+    <aura:attribute name="CreateContact" type="Contact" default="{sobjectname : 'Contact',
+                                                                 FirstName : '',
+                                                                 LastName : '',
+                                                                 Email : '',
+                                                                 Phone: ''
+                                                                 }"/>
+    {!v.ErrorMessage}
+    <div class="slds-p-around_small">
+        <lightning:input type="text" aura:id="contactForm" value="{!v.CreateContact.FirstName}" label="First Name" required="true"/>
+        <lightning:input type="text" aura:id="contactForm" value="{!v.CreateContact.LastName}" label="Last Name" />
+        <lightning:input type="email" aura:id="contactForm" value="{!v.CreateContact.Email}" label="Email" required="true"/>
+        <lightning:input type="phone" aura:id="contactForm" value="{!v.CreateContact.Phone}" label="Phone" required="true"/>
+        
+        <lightning:button variant="brand" label="Create Contact" onclick="{!c.createCon}"/>
+    </div>
+</aura:component>

@@ -4,6 +4,25 @@
     "redhat.vscode-xml",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "financialforce.lana"
+    "financialforce.lana",
+    "github.github-vscode-theme",
+    "equinusocio.vsc-material-theme-icons",
+    "equinusocio.vsc-material-theme",
+    "akamud.vscode-theme-onedark",
+    "unthrottled.doki-theme",
+    "ms-vsliveshare.vsliveshare",
+    "xabikos.javascriptsnippets",
+    "cschlosser.doxdocgen",
+    "github.vscode-pull-request-github",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "mhutchie.git-graph",
+    "pranaygp.vscode-css-peek",
+    "tomoki1207.pdf",
+    "bradlc.vscode-tailwindcss",
+    "humao.rest-client",
+    "ahmadawais.shades-of-purple",
+    "eliverlara.andromeda",
+    "pkief.material-product-icons",
+    "sburg.vscode-javascript-booster"
   ]
 }

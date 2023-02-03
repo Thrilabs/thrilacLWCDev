@@ -66,15 +66,6 @@ public with sharing class CollectionVariablePractice {
     List<String> values = alphaNumericTest.values();
     system.debug('Values are : ' + values);
 
-    /*List<String> alphaLst = new List<String>();
-String keyPai;
-
-for(Integer i : Keys){
-keyPai = alphaNumericTest.get(i);
-system.debug('Key and Value individual pair, '+i +',' +keyPai);
-alphaLst.add(keyPai);
-}*/
-
     for (String v : values) {
       system.debug('Map2 is ' + v);
     }

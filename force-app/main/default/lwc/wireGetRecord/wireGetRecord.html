@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <template if:true={data}>
+      <p>Account Name: {data.fields.Name.value}</p>
+    </template>
+    <template if:true={error}>
+      <p>Error: {error.body.message}</p>
+    </template>
+  </div>
+</template>

@@ -1,0 +1,13 @@
+<template>
+  <template if:true={account.data}>
+    <lightning-card title={account.data.fields.Name.value}>
+      <div class="slds-m-around_medium">
+        <p>{account.data.fields.Name.value}</p>
+        <p>Description: {account.data.fields.Description.value}</p>
+      </div>
+    </lightning-card>
+  </template>
+  <template if:false={account.data}>
+    <p>Loading...</p>
+  </template>
+</template>

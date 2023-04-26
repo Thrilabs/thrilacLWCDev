@@ -3,5 +3,18 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/.sfdx": true
-  }
+  },
+  "cSpell.enableFiletypes": [
+    "apex",
+    "soql",
+    "sql",
+    "styled-css",
+    "xml"
+  ],
+  "cSpell.words": [
+    "SOQL"
+  ],
+  "cSpell.ignoreWords": [
+    "WHERE"
+  ]
 }

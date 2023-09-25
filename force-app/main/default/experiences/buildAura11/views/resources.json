@@ -1,0 +1,75 @@
+{
+  "appPageId": "f0e683cf-774d-4dca-87c1-5a8c0cd47425",
+  "componentName": "siteforce:sldsTwoCol84Layout",
+  "dataProviders": [],
+  "id": "d5dc0413-6af5-47f5-8a8e-62472dfc3095",
+  "label": "Resources",
+  "regions": [
+    {
+      "id": "e21523a1-22fe-4a41-a112-6c3495afd6b0",
+      "regionName": "header",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "librariesHeaderLabel": "Libraries",
+            "showWorkspaceImage": true
+          },
+          "componentName": "forceCommunity:workspacesList",
+          "id": "baf94b11-07d7-43de-98be-7470d792dbbf",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "a9d495ee-1a93-42c7-a29a-070d7cc73b8d",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "title": "Popular Now"
+          },
+          "componentName": "forceChatter:recommendationsBig",
+          "id": "53109592-04da-42bf-b2c9-8f2ea41247aa",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "f3278f93-c78a-48fd-851f-4bd8d215de72",
+      "regionName": "sidebar",
+      "type": "region"
+    },
+    {
+      "id": "7e2e8b90-8f6d-46f9-92bb-3d7f784d9e96",
+      "regionName": "footer",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "title": "Resources"
+          },
+          "componentName": "forceCommunity:seoAssistant",
+          "id": "ced8317a-cb5c-46a2-8d47-8231f223431e",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "d6f8ad2d-b332-4fe8-8eb4-de0d84a4c61c",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "Inner",
+  "type": "view",
+  "viewType": "files"
+}

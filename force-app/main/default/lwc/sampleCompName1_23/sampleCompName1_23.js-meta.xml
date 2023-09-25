@@ -1,0 +1,33 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+	<apiVersion>57.0</apiVersion>
+	<isExposed>true</isExposed>
+	<masterLabel>Sample comp name1 23</masterLabel>
+	<targets>
+		<target>lightning__AppPage</target>
+		<target>lightning__RecordPage</target>
+		<target>lightningCommunity__Page</target>
+		<target>lightningCommunity__Default</target>
+	</targets>
+	<targetConfigs>
+		<targetConfig targets="lightning__AppPage">
+			<property name="teset11_23" type="String" label="Teset11 23" />
+			<supportedFormFactors>
+				<supportedFormFactor type="Small" />
+				<supportedFormFactor type="Large" />
+			</supportedFormFactors>
+		</targetConfig>
+		<targetConfig targets="lightning__RecordPage">
+			<property name="teset11_23" type="String" label="Teset11 23" />
+			<objects>
+				<object>Account</object>
+			</objects>
+			<supportedFormFactors>
+				<supportedFormFactor type="Small" />
+				<supportedFormFactor type="Large" />
+			</supportedFormFactors>
+		</targetConfig>
+		<targetConfig targets="lightningCommunity__Default">
+			<property name="teset11_23" type="String" label="Teset11 23" />
+		</targetConfig>
+	</targetConfigs>
+</LightningComponentBundle>

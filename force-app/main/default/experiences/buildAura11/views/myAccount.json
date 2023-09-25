@@ -1,0 +1,108 @@
+{
+  "appPageId": "f0e683cf-774d-4dca-87c1-5a8c0cd47425",
+  "componentName": "siteforce:dynamicLayout",
+  "dataProviders": [],
+  "id": "997d482b-8a64-4a7e-aaaa-1b42a5e504bb",
+  "label": "My Account",
+  "regions": [
+    {
+      "id": "1c0501d2-b110-4133-9920-bae4cda9436f",
+      "regionName": "header",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "background": "background: rgba(0,0,0,0)",
+            "backgroundOverlay": "rgba(0,0,0,0.5)",
+            "contentAreaWidth": 100,
+            "sectionConfig": {
+              "UUID": "83b58639-bbe3-476b-8452-55976f101511",
+              "columns": [
+                {
+                  "UUID": "742b75f5-87ef-4eb7-a179-97f931145fd7",
+                  "columnKey": "col1",
+                  "columnName": "column 1",
+                  "columnWidth": "12",
+                  "seedComponents": [
+                    {
+                      "attributes": {
+                        "recordId": "{!CurrentUser.accountId}",
+                        "sfdc:identifier": "forceCommunity_recordHeadline"
+                      },
+                      "fqn": "forceCommunity:recordHeadline"
+                    },
+                    {
+                      "attributes": {
+                        "recordId": "{!CurrentUser.accountId}",
+                        "sfdc:identifier": "forceCommunity_recordHomeTabs"
+                      },
+                      "fqn": "forceCommunity:recordHomeTabs"
+                    }
+                  ]
+                }
+              ]
+            },
+            "sectionHeight": 32
+          },
+          "componentName": "forceCommunity:section",
+          "id": "83b58639-bbe3-476b-8452-55976f101511",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {
+                    "recordId": "{!CurrentUser.accountId}"
+                  },
+                  "componentName": "forceCommunity:recordHeadline",
+                  "id": "7659337e-8dc2-4248-a901-c343381ebc14",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                },
+                {
+                  "componentAttributes": {
+                    "detailsTabLabel": "Details",
+                    "discussionsTabLabel": "Feed",
+                    "recordId": "{!CurrentUser.accountId}",
+                    "relatedTabLabel": "Related",
+                    "tab1Type": "details",
+                    "tab2Type": "related",
+                    "tab3Type": "chatter",
+                    "tab4Type": "none",
+                    "timelineTabLabel": "Activity"
+                  },
+                  "componentName": "forceCommunity:recordHomeTabs",
+                  "id": "75140c87-d822-4f8d-bf98-7f78bd7889c7",
+                  "renderPriority": "NEUTRAL",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "742b75f5-87ef-4eb7-a179-97f931145fd7",
+              "regionLabel": "column 1",
+              "regionName": "col1",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "58dadcef-2443-466c-91cc-8066c2fa455f",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "id": "52a999d4-fe04-4464-bb1e-1a9037e3eac7",
+      "regionName": "footer",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "Inner",
+  "type": "view",
+  "viewType": "my-account"
+}

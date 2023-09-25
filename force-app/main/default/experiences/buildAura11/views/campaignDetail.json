@@ -1,0 +1,75 @@
+{
+  "appPageId": "f0e683cf-774d-4dca-87c1-5a8c0cd47425",
+  "componentName": "siteforce:sldsOneColLayout",
+  "dataProviders": [],
+  "id": "18373331-016a-4763-a175-25bb6728dc17",
+  "label": "Campaign Detail",
+  "regions": [
+    {
+      "id": "78388841-e835-47ca-8e4d-20d472c66b36",
+      "regionName": "header",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "recordId": "{!recordId}"
+          },
+          "componentName": "forceCommunity:recordHeadline",
+          "id": "3eac5004-f56a-4eab-9a5c-798ca46cca73",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        },
+        {
+          "componentAttributes": {
+            "detailsTabLabel": "Details",
+            "discussionsTabLabel": "Feed",
+            "recordId": "{!recordId}",
+            "relatedTabLabel": "Related",
+            "tab1Type": "details",
+            "tab2Type": "related",
+            "tab3Type": "chatter",
+            "tab4Type": "none",
+            "timelineTabLabel": "Activity"
+          },
+          "componentName": "forceCommunity:recordHomeTabs",
+          "id": "22383c5b-4382-437a-8776-8855aee324b3",
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "159bdc3f-3019-411a-8558-a9dd90ff9840",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "id": "f38cdb22-725b-4568-845d-292b7ce75183",
+      "regionName": "footer",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "customHeadTags": "",
+            "description": "",
+            "title": "{!Record._Object}: {!Record._Title}"
+          },
+          "componentName": "forceCommunity:seoAssistant",
+          "id": "e2fa30a6-6181-4db1-a77f-283d0461960d",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "6ff5fcdf-f3d6-4bf8-8a67-58197dabc14d",
+      "regionName": "sfdcHiddenRegion",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "Inner",
+  "type": "view",
+  "viewType": "detail-701"
+}

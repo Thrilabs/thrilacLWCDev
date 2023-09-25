@@ -15,6 +15,7 @@
     "SOQL"
   ],
   "cSpell.ignoreWords": [
-    "WHERE"
+    "WHERE",
+    "onproductselected"
   ]
 }

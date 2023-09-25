@@ -1,0 +1,150 @@
+{
+  "appPageId": "f0e683cf-774d-4dca-87c1-5a8c0cd47425",
+  "componentName": "siteforce:sldsOneColLayout",
+  "dataProviders": [],
+  "id": "f03bdd88-9798-4e20-93c7-75a912461b35",
+  "label": "Campaign List",
+  "regions": [
+    {
+      "id": "d60ba995-9404-4dc2-8bf7-6843f20dd692",
+      "regionName": "header",
+      "type": "region"
+    },
+    {
+      "components": [
+        {
+          "componentAttributes": {
+            "tabsetConfig": {
+              "UUID": "c90d8bee-877f-4692-a775-1b9d7011b0a5",
+              "activeTab": "tab1",
+              "tabs": [
+                {
+                  "UUID": "0b160e76-67b1-44d1-930d-fa98720e03f9",
+                  "allowGuestUser": true,
+                  "locked": false,
+                  "seedComponents": [
+                    {
+                      "attributes": {
+                        "richTextValue": "                                  <p><br/></p>                                <p style=&quot;text-align:left;&quot;>                                     Use these campaigns to generate leads and grow your business                                 </p>                       "
+                      },
+                      "fqn": "forceCommunity:richTextInline"
+                    },
+                    {
+                      "attributes": {},
+                      "fqn": "forceCommunity:campaignTileList"
+                    }
+                  ],
+                  "tabKey": "tab1",
+                  "tabName": "Campaign Marketplace"
+                },
+                {
+                  "UUID": "da5b2f04-34ac-4eaf-9081-0ae2b97ee6a4",
+                  "allowGuestUser": true,
+                  "locked": false,
+                  "seedComponents": [
+                    {
+                      "attributes": {
+                        "filterName": "Recent",
+                        "scope": "Campaign"
+                      },
+                      "fqn": "forceCommunity:objectHome"
+                    }
+                  ],
+                  "tabKey": "tab2",
+                  "tabName": "All Campaigns"
+                }
+              ],
+              "useOverflowMenu": false
+            }
+          },
+          "componentName": "forceCommunity:tabset",
+          "id": "c90d8bee-877f-4692-a775-1b9d7011b0a5",
+          "regions": [
+            {
+              "components": [
+                {
+                  "componentAttributes": {
+                    "richTextValue": "                                  <p><br/></p>                                <p style=&quot;text-align:left;&quot;>                                     Use these campaigns to generate leads and grow your business                                 </p>                       "
+                  },
+                  "componentName": "forceCommunity:richTextInline",
+                  "id": "6a0ff94b-8b1e-4977-9cb1-68a6d961e37b",
+                  "renditionMap": {},
+                  "type": "component"
+                },
+                {
+                  "componentAttributes": {
+                    "bodyField": "Description",
+                    "categoryField": "Type",
+                    "dataFieldsConfig": "",
+                    "highlight": "__",
+                    "highlightColor": "#007DB8",
+                    "listLabel": "",
+                    "listViewName": "AllActiveCampaigns",
+                    "showImage": true,
+                    "sortBy": "Name",
+                    "sortOrder": "Ascending",
+                    "titleField": "Name"
+                  },
+                  "componentName": "forceCommunity:campaignTileList",
+                  "id": "68552e6f-0a4b-4592-9a42-699f6d7ece33",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "0b160e76-67b1-44d1-930d-fa98720e03f9",
+              "regionLabel": "Campaign Marketplace",
+              "regionName": "tab1",
+              "renditionMap": {},
+              "type": "region"
+            },
+            {
+              "components": [
+                {
+                  "componentAttributes": {
+                    "enableInlineEdit": true,
+                    "filterName": "Recent",
+                    "layout": "FULL",
+                    "pageSize": 25,
+                    "scope": "Campaign",
+                    "showActionBar": true,
+                    "showChartsPanel": true,
+                    "showDisplay": "showall",
+                    "showFilterPanel": true,
+                    "showImageIcon": true,
+                    "showManualRefreshButton": true,
+                    "showObjectName": true,
+                    "showPinnedList": true,
+                    "showSearchBar": true
+                  },
+                  "componentName": "forceCommunity:objectHome",
+                  "id": "3cb00b1d-f1b9-44d1-b648-389bc9873a14",
+                  "renditionMap": {},
+                  "type": "component"
+                }
+              ],
+              "id": "da5b2f04-34ac-4eaf-9081-0ae2b97ee6a4",
+              "regionLabel": "All Campaigns",
+              "regionName": "tab2",
+              "renditionMap": {},
+              "type": "region"
+            }
+          ],
+          "renderPriority": "NEUTRAL",
+          "renditionMap": {},
+          "type": "component"
+        }
+      ],
+      "id": "980e6805-c7c5-4b89-8f2e-593c77cf41aa",
+      "regionName": "content",
+      "type": "region"
+    },
+    {
+      "id": "94304424-5c69-4330-a5e9-bcd0f514ee6b",
+      "regionName": "footer",
+      "type": "region"
+    }
+  ],
+  "themeLayoutType": "Inner",
+  "type": "view",
+  "viewType": "list-701"
+}

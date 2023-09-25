@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedContentType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description
+  >Engineering blogs published on salesforce.com/devblog</description>
+    <developerName>engBlog</developerName>
+    <managedContentNodeTypes>
+        <helpText>Title to be shown in the blog post</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Blog Title</nodeLabel>
+        <nodeName>title</nodeName>
+        <nodeType>NAMEFIELD</nodeType>
+        <placeholderText>Enter an SEO friendly title</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText
+    >Main image that&apos;s shown at the top of the blog post</helpText>
+        <isLocalizable>false</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Primary Image</nodeLabel>
+        <nodeName>primaryImage</nodeName>
+        <nodeType>IMG</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Blog&apos;s main body</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Main Content</nodeLabel>
+        <nodeName>body</nodeName>
+        <nodeType>RTE</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Excerpt</nodeLabel>
+        <nodeName>excerpt</nodeName>
+        <nodeType>MTEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Shown as a tag text when a preview is rendered</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Category</nodeLabel>
+        <nodeName>category</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Author Name</nodeLabel>
+        <nodeName>authorName</nodeName>
+        <nodeType>TEXT</nodeType>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>false</isRequired>
+        <nodeLabel>Date to Show</nodeLabel>
+        <nodeName>date</nodeName>
+        <nodeType>TEXT</nodeType>
+        <placeholderText>Enter human readable date</placeholderText>
+    </managedContentNodeTypes>
+    <managedContentNodeTypes>
+        <helpText>Blog&apos;s footer</helpText>
+        <isLocalizable>true</isLocalizable>
+        <isRequired>true</isRequired>
+        <nodeLabel>Footer content</nodeLabel>
+        <nodeName>footer</nodeName>
+        <nodeType>RTE</nodeType>
+    </managedContentNodeTypes>
+    <masterLabel>Blog</masterLabel>
+</ManagedContentType>
